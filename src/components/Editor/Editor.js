@@ -1,6 +1,6 @@
 import './Editor.css';
 
-export default function Editor({ title, setTitle, subtitle, setSubtitle }) {
+export default function Editor({ title, setTitle, subtitle, setSubtitle, text, setText }) {
   return (
     <div className="editor">
       <div className="form-control">
@@ -8,7 +8,7 @@ export default function Editor({ title, setTitle, subtitle, setSubtitle }) {
         <label htmlFor="title">Title</label>
       </div>
       <div className="form-control">
-        <input type="text"value={subtitle} onChange={(e) => setSubtitle(e.target.value)} />
+        <input name="subtitle" type="text" value={subtitle} onChange={(e) => setSubtitle(e.target.value)} />
         <label>Subtitle</label>
       </div>
       <div className="form-control">
@@ -42,7 +42,7 @@ export default function Editor({ title, setTitle, subtitle, setSubtitle }) {
         </div>
       </div>
       <div className="form-control">
-        <textarea style={{ height: '250px' }} />
+        <textarea name="text" type="text" value={text} onChange={(e) => setText(e.target.value)} style={{ height: '250px' }} />
         <label>Text</label>
       </div>
     </div>
