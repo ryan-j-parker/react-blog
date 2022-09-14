@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main>
       <Preview title={title} subtitle={subtitle} text={text} font={font} align={align} />
-      <Editor title={title} setTitle={setTitle} subtitle={subtitle} setSubtitle={setSubtitle} font={font} setFont={setFont} align={align} setAlign={setAlign} text={text} setText={setText}/>
+      <Editor title={title} setTitle={setTitle} subtitle={subtitle} setSubtitle={setSubtitle} font={font} setFont={setFont} align={align} setAlign={setAlign} text={text} setText={setText} />
     </main>
   );
 }

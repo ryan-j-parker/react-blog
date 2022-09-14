@@ -8,7 +8,7 @@ export default function Preview({ title, subtitle, font, align, text }) {
   //  the main div should have a class of preview and the font-name prop
   //  and should have style interpolated using the alignment prop
   return (
-    <div className={`preview ${font}`} style={{ 'text-align': align }}> 
+    <div className={`preview ${font}`} style={{ textAlign: align }}> 
       <h1>{title}</h1>
       <h3>{subtitle}</h3>
       <p>{text}</p>
