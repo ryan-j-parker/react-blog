@@ -11,12 +11,13 @@ export default function Home() {
   const [title, setTitle] = useState('');
   const [subtitle, setSubtitle] = useState('');
   const [font, setFont] = useState('');
+  const [align, setAlign] = useState('');
   const [text, setText] = useState('');
 
   return (
     <main>
-      <Preview title={title} subtitle={subtitle} text={text} font={font} />
-      <Editor title={title} setTitle={setTitle} subtitle={subtitle} setSubtitle={setSubtitle} font={font} setFont={setFont} text={text} setText={setText}/>
+      <Preview title={title} subtitle={subtitle} text={text} font={font} align={align} />
+      <Editor title={title} setTitle={setTitle} subtitle={subtitle} setSubtitle={setSubtitle} font={font} setFont={setFont} align={align} setAlign={setAlign} text={text} setText={setText}/>
     </main>
   );
 }
