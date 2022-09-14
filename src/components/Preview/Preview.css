@@ -2,7 +2,8 @@
   grid-area: preview;
   height: 80%;
   width: 100%;
-  background-color: var(--color1);
+  background-color: white;
   margin: 20px;
-  color: var(--color5);
+  color: blue;
+  border: 2px solid black;
 }

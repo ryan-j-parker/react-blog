@@ -33,3 +33,11 @@ _Please remember to deploy your main branch on Netlify and open a PR for a previ
 | State variables are setters are passed as props to Editor.js     | 2      |
 | Editor correctly updates state variables when each input changes | 2      |
 | Preview correctly displays updated state                         | 2      |
+
+
+## STATE:
+
+Home --> Preview
+   L-> Editor
+
+Home is the original state, gets updated state from Editor and sets it to Preview
